@@ -126,6 +126,4 @@ RUN cd /dldt && mkdir build && cd build && cmake \
 
 ENV PYTHONPATH=/dldt/bin/armv7l/Release/lib/python_api/python3.7
 
-RUN pip3 install dlib
-
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp* /root/.cache/pip/wheels/*
